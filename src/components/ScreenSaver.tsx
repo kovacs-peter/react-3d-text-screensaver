@@ -5,7 +5,7 @@ import { useIdleTimer } from 'react-idle-timer';
 import type { TextProperties } from '../types';
 import { Direction } from '../types';
 import RotatingText from './RotatingText';
-import style from './ScreenSaver.module.css';
+import '../assets/css/ScreenSaver.css';
 
 interface ScreenSaverProps {
   timeout?: number; // Seconds after the screensaver activates automatically, can't be used if visible prop is used
@@ -48,7 +48,7 @@ const ScreenSaver = ({
 
   if (internalVisible)
     return (
-      <div className={className || style.canvas}>
+      <div className={className || 'screensaver-canvas'}>
         <Canvas>
           <Environment background={false} blur={0.8} preset="sunset" />
           <mesh>

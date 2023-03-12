@@ -5,7 +5,7 @@
   },
   "preset": "ts-jest",
   "testRegex": "(src/__tests__/.*)\\.(jsx?|tsx?)$",
-  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node", "css"],
   "testEnvironment": "jsdom",
   "moduleNameMapper": {
     "\\.(css|less)$": "<rootDir>/mock/mock.js",

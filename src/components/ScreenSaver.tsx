@@ -2,10 +2,10 @@ import React, { PropsWithChildren, useEffect, useState } from 'react';
 import { Environment } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { useIdleTimer } from 'react-idle-timer';
+import styled from 'styled-components';
 import type { TextProperties } from '../types';
 import { Direction } from '../types';
 import RotatingText from './RotatingText';
-import styled from 'styled-components';
 
 interface ScreenSaverProps {
   timeout?: number; // Seconds after the screensaver activates automatically, can't be used if visible prop is used

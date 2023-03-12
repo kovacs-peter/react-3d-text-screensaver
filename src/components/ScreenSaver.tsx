@@ -5,7 +5,7 @@ import { useIdleTimer } from 'react-idle-timer';
 import type { TextProperties } from '../types';
 import { Direction } from '../types';
 import RotatingText from './RotatingText';
-import '../assets/css/ScreenSaver.css';
+import styled from 'styled-components';
 
 interface ScreenSaverProps {
   timeout?: number; // Seconds after the screensaver activates automatically, can't be used if visible prop is used
@@ -24,6 +24,20 @@ const defaultTextProps: TextProperties = {
 };
 
 const defaultTimeout = 30;
+
+const CanvasContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+`;
 
 const ScreenSaver = ({
   children,
@@ -48,7 +62,7 @@ const ScreenSaver = ({
 
   if (internalVisible)
     return (
-      <div className={className || 'screensaver-canvas'}>
+      <CanvasContainer className={className}>
         <Canvas>
           <Environment background={false} blur={0.8} preset="sunset" />
           <mesh>
@@ -56,7 +70,7 @@ const ScreenSaver = ({
           </mesh>
         </Canvas>
         {children}
-      </div>
+      </CanvasContainer>
     );
   return null;
 };

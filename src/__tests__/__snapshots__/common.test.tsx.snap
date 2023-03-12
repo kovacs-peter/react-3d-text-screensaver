@@ -3,7 +3,7 @@
 exports[`<ScreenSaver /> renders correctly 1`] = `
 <div>
   <div
-    class="screensaver-canvas"
+    class="sc-beySbM jDcxxL"
   >
     <div
       style="position: relative; width: 100%; height: 100%; overflow: hidden; pointer-events: auto;"

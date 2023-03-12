@@ -64,10 +64,15 @@ module.exports = {
             functions: 'never',
           },
         ],
+        'class-methods-use-this': ['off'],
         'import/no-extraneous-dependencies': [
           'error',
           {
-            devDependencies: ['src/components/ScreenSaver.tsx', 'src/components/RotatingText.tsx'],
+            devDependencies: [
+              'src/components/ScreenSaver.tsx',
+              'src/components/RotatingText.tsx',
+              '**/__tests__/**/*',
+            ],
           },
         ],
         'react/no-unknown-property': ['off'],
@@ -77,6 +82,8 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       parserOptions: {
         project: ['./tsconfig.json'],
+        tsconfigRootDir: __dirname,
+        parser: '@typescript-eslint/parser',
       },
     },
   ],

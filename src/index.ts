@@ -1,3 +1,5 @@
 import ScreenSaver from './components/ScreenSaver';
+import type { TextProperties, Direction } from './types';
 
-export default ScreenSaver;
+export type { TextProperties, Direction };
+export { ScreenSaver };

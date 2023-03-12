@@ -1,0 +1,17 @@
+{
+  "verbose": true,
+  "transform": {
+    "^.+\\.(t|j)sx?$": "ts-jest"
+  },
+  "preset": "ts-jest",
+  "testRegex": "(/__tests__/.*)\\.(jsx?|tsx?)$",
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+  "testEnvironment": "jsdom",
+  "moduleNameMapper": {
+    "\\.(css|less)$": "<rootDir>/mock/mock.js",
+    "three/examples/jsm/loaders/FontLoader": "<rootDir>/mock/mock.js",
+    "three/examples/jsm/geometries/TextGeometry": "<rootDir>/mock/mock.js"
+  },
+  "modulePaths": ["<rootDir>/src"],
+  "moduleDirectories": ["node_modules", "src"]
+}

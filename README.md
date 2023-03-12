@@ -25,7 +25,7 @@ npm install react-3d-text-screensaver
 ## Usage
 
 ```
-import ScreenSaver from react-3d-text-screensaver';
+import { ScreenSaver } from react-3d-text-screensaver';
 
 function Component() {
   ...

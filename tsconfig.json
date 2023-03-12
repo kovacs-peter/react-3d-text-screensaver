@@ -1,5 +1,5 @@
 {
-  "include": ["src"],
+  "include": ["src", "src/common.test.tsx"],
   "exclude": ["dist", "node_modules"],
   "compilerOptions": {
     "module": "esnext",
@@ -19,6 +19,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "allowJs": true
   }
 }

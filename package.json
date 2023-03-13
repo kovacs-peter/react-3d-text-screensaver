@@ -39,7 +39,10 @@
   "author": "Peter Kovacs (kovacs-peter)",
   "license": "MIT",
   "peerDependencies": {
-    "react": ">=16"
+    "@react-three/drei": "^8.12.0",
+    "react": ">=16",
+    "react-idle-timer": "^5.5.3",
+    "three": "<=0.150.1"
   },
   "devDependencies": {
     "@testing-library/react": "^14.0.0",
@@ -73,6 +76,6 @@
     "@react-three/fiber": "^8.12.0",
     "react-idle-timer": "^5.5.3",
     "styled-components": "^5.3.8",
-    "three": "^0.150.1"
+    "three": "^0.149.0"
   }
 }
